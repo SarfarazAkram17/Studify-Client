@@ -2,9 +2,9 @@
 
 Studify is a modern, full-stack, Firebase-authenticated assignment management web application built for collaborative learning. Users can **create**, **submit**, and **evaluate** assignments with secure access control, seamless UI, and responsive design.
 
-🌐 **Live Site**: https://assignment-11-sarfaraz-akram.netlify.app
+🔗 **Live Site:** (https://assignment-11-sarfaraz-akram.netlify.app)
 
-## **Server Repo:** (https://github.com/SarfarazAkram17/Studify-Server)
+**Server Repo:** (https://github.com/SarfarazAkram17/Studify-Server)
 
 ## 🚀 Features Overview
 
