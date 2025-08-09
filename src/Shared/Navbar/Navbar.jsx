@@ -266,7 +266,7 @@ const Navbar = () => {
               >
                 Log Out
               </button>
-            </div>
+            </div>studify-sarfaraz-akram.vercel.app
           ) : (
             <div className="flex gap-2 items-center">
               <Link to="/login">
