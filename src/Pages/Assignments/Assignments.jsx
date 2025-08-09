@@ -19,7 +19,7 @@ const Assignments = () => {
   const [hasAnyAssignments, setHasAnyAssignments] = useState(true);
 
   const getAssignments = () => {
-    let url = "http://localhost:3000/assignments";
+    let url = "https://studify-sarfaraz-akram.vercel.app/assignments";
     const queryParams = [];
 
     if (filter) queryParams.push(`difficulty=${filter}`);

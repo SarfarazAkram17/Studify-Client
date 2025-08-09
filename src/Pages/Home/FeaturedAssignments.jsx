@@ -18,7 +18,7 @@ const FeaturedAssignments = () => {
   const getAssignments = () => {
     setLoading(true);
     axios
-      .get("http://localhost:3000/assignments/random")
+      .get("https://studify-sarfaraz-akram.vercel.app/assignments/random")
       .then((res) => {
         setAssignments(res.data);
         setLoading(false);

@@ -110,7 +110,7 @@ export const router = createBrowserRouter([
         path: "/giveAssignmentMark/:id",
         loader: ({ params }) =>
           fetch(
-            `http://localhost:3000/submissions/${params.id}`
+            `https://studify-sarfaraz-akram.vercel.app/submissions/${params.id}`
           ),
         element: (
           <PrivateRouter>
@@ -137,7 +137,7 @@ export const router = createBrowserRouter([
         path: "/assignmentDetails/:id",
         loader: ({ params }) =>
           fetch(
-            `http://localhost:3000/assignments/${params.id}`
+            `https://studify-sarfaraz-akram.vercel.app/assignments/${params.id}`
           ),
         element: <AssignmentDetails></AssignmentDetails>,
         hydrateFallbackElement: (
@@ -152,7 +152,7 @@ export const router = createBrowserRouter([
         path: "/updateAssignment/:id",
         loader: ({ params }) =>
           fetch(
-            `http://localhost:3000/assignments/${params.id}`
+            `https://studify-sarfaraz-akram.vercel.app/assignments/${params.id}`
           ),
         element: (
           <PrivateRouter>
