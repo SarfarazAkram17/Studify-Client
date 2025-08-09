@@ -160,7 +160,7 @@ const UpdateAssignment = () => {
                 defaultValue={difficulty}
                 name="difficulty"
                 required
-                className="select w-full bg-base-100"
+                className="select w-full bg-base-100 h-8"
               >
                 <option>Easy</option>
                 <option>Medium</option>
