@@ -30,7 +30,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="py-16 px-4 md:px-12">
+    <section className="py-16">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
         Platform Features
       </h2>
@@ -38,7 +38,7 @@ const Features = () => {
         {features.map((feature, index) => (
           <motion.div
             key={index}
-            className="bg-base-200 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-500 border border-base-300"
+            className="bg-base-200 text-center p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-500 border border-base-300"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.3 }}

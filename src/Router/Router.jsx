@@ -14,6 +14,7 @@ import { lazy, Suspense } from "react";
 import MyCreatedAssignment from "../Pages/MyCreatedAssignment/MyCreatedAssignment";
 
 const Home = lazy(() => import("../Pages/Home/Home"));
+const About = lazy(() => import("../Pages/About/About"));
 const Login = lazy(() => import("../Pages/Login/Login"));
 const Register = lazy(() => import("../Pages/Register/Register"));
 const ErrorPage = lazy(() => import("../Pages/ErrorPage/ErrorPage"));
@@ -35,6 +36,22 @@ export const router = createBrowserRouter([
             }
           >
             <Home></Home>
+          </Suspense>
+        ),
+      },
+      {
+        path: '/about',
+        element: (
+          <Suspense
+            fallback={
+              <Lottie
+                loop={true}
+                animationData={lottieLoading}
+                className="h-[40vh] w-auto"
+              ></Lottie>
+            }
+          >
+            <About></About>
           </Suspense>
         ),
       },
@@ -92,7 +109,9 @@ export const router = createBrowserRouter([
       {
         path: "/giveAssignmentMark/:id",
         loader: ({ params }) =>
-          fetch(`https://assignment-11-sarfaraz-akram.vercel.app/submissions/${params.id}`),
+          fetch(
+            `http://localhost:3000/submissions/${params.id}`
+          ),
         element: (
           <PrivateRouter>
             <GiveAssignmentMark></GiveAssignmentMark>
@@ -117,12 +136,10 @@ export const router = createBrowserRouter([
       {
         path: "/assignmentDetails/:id",
         loader: ({ params }) =>
-          fetch(`https://assignment-11-sarfaraz-akram.vercel.app/assignments/${params.id}`),
-        element: (
-          <PrivateRouter>
-            <AssignmentDetails></AssignmentDetails>
-          </PrivateRouter>
-        ),
+          fetch(
+            `http://localhost:3000/assignments/${params.id}`
+          ),
+        element: <AssignmentDetails></AssignmentDetails>,
         hydrateFallbackElement: (
           <Lottie
             loop={true}
@@ -134,7 +151,9 @@ export const router = createBrowserRouter([
       {
         path: "/updateAssignment/:id",
         loader: ({ params }) =>
-          fetch(`https://assignment-11-sarfaraz-akram.vercel.app/assignments/${params.id}`),
+          fetch(
+            `http://localhost:3000/assignments/${params.id}`
+          ),
         element: (
           <PrivateRouter>
             <UpdateAssignment></UpdateAssignment>

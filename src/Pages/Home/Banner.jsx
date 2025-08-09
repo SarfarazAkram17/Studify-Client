@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const Banner = () => {
   return (
-    <section className="bg-gradient-to-r from-base-200 to-base-300 py-12 px-4 md:px-6 lg:px-20 rounded-lg">
+    <section className="bg-gradient-to-r mt-4 from-base-200 to-base-300 py-12 px-4 md:px-6 lg:px-20 rounded-lg">
       <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         {/* Left - Text */}
         <motion.div

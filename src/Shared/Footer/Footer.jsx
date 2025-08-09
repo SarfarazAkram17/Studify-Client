@@ -1,6 +1,5 @@
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { NavLink } from "react-router";
-import { toast } from "react-toastify";
 import useAuth from "../../Hooks/useAuth";
 
 const Footer = () => {
@@ -8,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gray-900 text-white py-8 px-4 sm:px-6 lg:px-8 mt-12">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="space-y-3">
           <div className="flex items-center gap-4">
             <img
@@ -49,30 +48,39 @@ const Footer = () => {
           <h3 className="text-2xl font-bold mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <NavLink
-                to="/"
-                aria-label="Go to home page"
-              >
+              <NavLink to="/" aria-label="Go to home page">
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/assignments"
-                aria-label="View all assignments"
-              >
+              <NavLink to="/about" aria-label="Go to about page">
+                About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/assignments" aria-label="View all assignments">
                 Assignments
               </NavLink>
             </li>
             {user && (
-              <li>
-                <NavLink
-                  to="/pendingAssignments"
-                  aria-label="View pending assignments"
-                >
-                  Pending Assignments
-                </NavLink>
-              </li>
+              <>
+                <li>
+                  <NavLink
+                    to="/pendingAssignments"
+                    aria-label="View pending assignments"
+                  >
+                    Pending Assignments
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/createAssignments"
+                    aria-label="Create assignment"
+                  >
+                    Create Assignments
+                  </NavLink>
+                </li>
+              </>
             )}
           </ul>
         </div>
@@ -99,7 +107,7 @@ const Footer = () => {
               <FaTwitter size={25} />
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/sarfarazakram"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit our Google page"
@@ -118,37 +126,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
-
-        <div>
-          <h3 className="text-2xl font-bold mb-3">Stay Updated</h3>
-          <p className="text-sm mb-3">Subscribe for study tips and updates!</p>
-          <div className="flex flex-col sm:flex-row gap-2">
-            <form
-              className="flex items-center"
-              onSubmit={(e) => {
-                e.preventDefault();
-                toast.success("Successfully subscribed!");
-                e.target.reset()
-              }}
-            >
-              <input
-                type="email"
-                placeholder="Email address"
-                className="px-2 py-3 rounded-md text-sm bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-blue-400"
-                aria-label="Email for newsletter subscription"
-                required
-              />
-              <input
-                type="submit"
-                className="py-1 px-2 text-lg btn btn-info font-bold rancho"
-                value="Subscribe"
-              />
-            </form>
-          </div>
-        </div>
       </div>
 
-      <div className="mt-10 text-center text-sm text-gray-400">
+      <div className="mt-13 text-center text-sm text-gray-400">
         © {new Date().getFullYear()} Studify. All rights reserved.
       </div>
     </footer>
