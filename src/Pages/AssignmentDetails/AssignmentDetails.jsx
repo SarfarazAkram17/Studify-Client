@@ -70,7 +70,7 @@ const AssignmentDetails = () => {
         <h1 className="text-5xl text-info font-bold mb-6 text-center">
           Assignment Details
         </h1>
-        <p className="text-center text-gray-600 text-[13px] max-w-2xl mx-auto font-semibold mb-10">
+        <p className="text-center text-gray-500 text-[13px] max-w-2xl mx-auto font-semibold mb-10">
           Review the assignment information carefully including its difficulty,
           due date, and total marks. If you're ready to take this assignment,
           click on the "Take Assignment" button to submit your response. Make

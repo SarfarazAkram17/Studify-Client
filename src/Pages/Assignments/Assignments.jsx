@@ -106,7 +106,7 @@ const Assignments = () => {
                   ? "No Assignments Found"
                   : "No Assignments Available"}
               </h1>
-              <p className="text-center text-gray-600 text-[13px] max-w-2xl mx-auto font-semibold mb-10">
+              <p className="text-center text-gray-500 text-[13px] max-w-2xl mx-auto font-semibold mb-10">
                 {filter || searchText
                   ? "Try adjusting your search or filter."
                   : "There are currently no assignments created. Be the first to create an assignment and help others learn!"}
@@ -117,7 +117,7 @@ const Assignments = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-info">
                 Explore All Assignments
               </h1>
-              <p className="text-center text-gray-600 text-[13px] max-w-2xl mx-auto font-semibold mb-10">
+              <p className="text-center text-gray-500 text-[13px] max-w-2xl mx-auto font-semibold mb-10">
                 Discover a variety of assignments created by fellow learners.
                 Dive into projects like portfolio websites, chat apps,
                 calculators, and more. Click “View” to explore, “Edit” to update

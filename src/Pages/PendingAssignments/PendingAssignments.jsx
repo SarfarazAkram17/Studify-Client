@@ -35,7 +35,7 @@ const PendingAssignments = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-info">
               No Pending Assignments
             </h1>
-            <p className="text-center text-gray-600 text-[13px] max-w-2xl mx-auto font-semibold mb-10">
+            <p className="text-center text-gray-500 text-[13px] max-w-2xl mx-auto font-semibold mb-10">
               Great job! There are currently no assignments waiting for your
               evaluation. Check back later for new submissions or focus on
               completing your own assignments. Keep up the excellent work and
@@ -47,7 +47,7 @@ const PendingAssignments = () => {
             <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-info">
               Pending Assignments to Evaluate
             </h1>
-            <p className="text-center text-gray-600 text-[13px] max-w-2xl mx-auto font-semibold mb-10">
+            <p className="text-center text-gray-500 text-[13px] max-w-2xl mx-auto font-semibold mb-10">
               Here you can review and evaluate all assignments submitted by your
               friends that are awaiting grading. Click on "Give Mark" to view
               the submission details and provide feedback. Remember, you cannot

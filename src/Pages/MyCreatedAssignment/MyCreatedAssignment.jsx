@@ -77,7 +77,7 @@ const MyCreatedAssignments = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-info">
             No Assignments Created Yet
           </h1>
-          <p className="text-center text-gray-600 max-w-2xl mx-auto font-semibold mb-10">
+          <p className="text-center text-gray-500 max-w-2xl mx-auto font-semibold mb-10">
             You haven't created any assignments yet. Start by creating one so
             others can attempt and submit it.
           </p>

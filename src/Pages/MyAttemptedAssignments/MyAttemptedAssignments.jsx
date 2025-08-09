@@ -38,7 +38,7 @@ const MyAttemptedAssignments = () => {
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-info">
             No Assignments Submitted Yet
           </h1>
-          <p className="text-center text-gray-600 max-w-2xl mx-auto font-semibold mb-10">
+          <p className="text-center text-gray-500 max-w-2xl mx-auto font-semibold mb-10">
             You haven't submitted any assignments. Once you take and submit an
             assignment, it will appear here.
           </p>

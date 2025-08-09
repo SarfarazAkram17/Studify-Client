@@ -9,12 +9,12 @@ const AboutUs = () => {
         <h2 className="text-4xl sm:text-5xl font-bold text-info mb-6">
           About the Developer
         </h2>
-        <p className="text-lg font-semibold text-gray-600 mb-3">
+        <p className="text-lg font-semibold text-gray-500 mb-3">
           Hello! I'm <span className="text-info">Sarfaraz Akram</span>, a
           dedicated and passionate full-stack web developer from Bangladesh.
         </p>
 
-        <p className="text-gray-600 mb-12 leading-relaxed font-semibold">
+        <p className="text-gray-500 mb-12 leading-relaxed font-semibold">
           My expertise lies in crafting dynamic, responsive, and user-friendly
           web applications using technologies like <strong>React.js</strong>,{" "}
           <strong>Tailwind CSS</strong>, <strong>Firebase</strong>,{" "}

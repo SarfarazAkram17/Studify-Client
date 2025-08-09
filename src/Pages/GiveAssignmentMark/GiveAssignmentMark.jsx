@@ -85,7 +85,7 @@ const GiveAssignmentMark = () => {
           <h1 className="text-5xl font-bold mb-6 text-info text-center">
             Evaluate this Assignment
           </h1>
-          <p className="text-center text-gray-600 text-[13px] max-w-2xl mx-auto font-semibold mb-10">
+          <p className="text-center text-gray-500 text-[13px] max-w-2xl mx-auto font-semibold mb-10">
             Please review the assignment submitted by the student carefully. Use
             the provided Google Docs link to access the full submission and
             refer to the quick note. Enter the marks the student has earned out
