@@ -134,7 +134,7 @@ const CreateAssignment = () => {
                 defaultValue=""
                 name="difficulty"
                 required
-                className="select w-full bg-base-100"
+                className="select w-full bg-base-100 h-8"
               >
                 <option disabled value="">
                   Choose difficulty
